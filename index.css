@@ -17,9 +17,11 @@ header {
     padding: 20px 40px;
     background: #fff;
 }
-.zaglovok{
+
+.zaglovok {
     font-weight: 800;
 }
+
 header nav a {
     margin: 0 15px;
     text-decoration: none;
@@ -70,16 +72,17 @@ header button, header .login {
     color: #6b46c1;
     text-decoration: none;
 }
-.first_img{
+
+.first_img {
     width: 100%;
 }
+
 .testimonials {
     padding: 50px 10%;
     text-align: center;
 }
 
 .testimonials img {
-
     margin-bottom: 20px;
 }
 
@@ -128,6 +131,7 @@ header button, header .login {
     text-align: center;
     padding: 50px 10%;
 }
+
 .connect-content {
     display: flex;
     align-items: center; /* Выравнивание по вертикали */
@@ -143,6 +147,7 @@ header button, header .login {
     max-width: 40%; /* Ограничение ширины текста */
     text-align: left;
 }
+
 .connect h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -152,6 +157,7 @@ header button, header .login {
     font-size: 1.1rem;
     color: #666;
 }
+
 .cta {
     position: relative; /* Позволяет позиционировать дочерние элементы */
     padding: 50px 10%;
@@ -205,7 +211,6 @@ header button, header .login {
     z-index: 2; /* Убедитесь, что изображение выше фона */
 }
 
-
 footer {
     background: #fff;
     color: #333;
@@ -222,12 +227,97 @@ footer div {
 
 footer .copyright {
     font-size: 0.9rem;
-   margin-top: 70px;
-   text-align: right;
+    margin-top: 70px;
+    text-align: right;
 }
 
 footer a {
     font-weight: bold;
     text-decoration: none;
     color: #333;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header nav a {
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .testimonials {
+        padding: 30px 5%;
+    }
+
+    .testimonials blockquote {
+        font-size: 1.8rem;
+    }
+
+    .content-title {
+        font-size: 2rem;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        padding: 30px 5%;
+    }
+
+    .profile-section img {
+        width: 80%;
+    }
+
+    .connect-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect-content img {
+        margin: 0 0 20px 0;
+        max-width: 100%;
+    }
+
+    .connect-text {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-text {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .cta-image {
+        margin: 20px 0;
+        max-width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .copyright {
+        margin-top: 20px;
+    }
 }
