@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jobly</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./preloader/preloader.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    
+      <!-- Блок прелоадера -->
+    <div class="loader"> 
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
+    <!--Основной код -->
     <header>
         <div class="zaglovok">Jobly</div>
         <nav>
             <a href="#">For Recruiters</a>
-            <a href="#" class="login">Sign Up</a>
+            <a href="#" class="login signup-button">Sign Up</a>
             <a href="#">Log in</a>
         </nav>
     </header>
@@ -24,9 +46,20 @@
         <p>This is the place to show yourself and land entry-level jobs at cutting-edge companies. Launch </p>
         <p>your career here.</p>
         <button>Join Now</button>
-        <a href="#">Looking for candidate’s? Hire now</a>
+        <span>
+            Looking for candidate’s?
+            <a class="hire_now"> Hire now</a>
+        </span>
     </section>
-    <img src="./img/Rectangle.png" class="first_img">
+    <!--Слайдер--> 
+    <section class="image-container">
+        <img src="./img/rectangle_white&black.png" class="first_img" alt="Image 1">
+        <img src="./img/Rectangle_2.png" class="overlay" alt="Image 2" style="display: none;">
+        <img src="./img/0x0.png" class="overlay" alt="Image 3" style="display: none;">
+    </section>
+    
+    
+    <!--Конец слайдера--> 
     <section class="testimonials">
         <img src="./img/Ellipse.png">
         <blockquote>
@@ -43,11 +76,28 @@
         Everything you want to know in one place.
     </div>
     <img src="./img/Frame 427320307.png" alt="Profile" class="first_img">
+    <section class="features">
+        <div class="feature">
+          <h4>Professional Profile</h4>
+          <p>
+            We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and get discovered by recruiter
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Best Portfolio</h4>
+          <p>
+            We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and get discovered by recruiter
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Powerful Resume</h4>
+          <p>
+            We know finding the right job is stressful, so we’ve made it simple. It only takes a few minutes. Create a free portfolio on briefolio to show your best self and get discovered by
+          </p>
+        </div>
+      </section>
     <section class="profile-section">
-        
     </section>
-
-    
     <section class="connect">
         <div class="connect-content">
             <img src="./img/Frame.png" alt="Connect with Recruiter">
@@ -80,7 +130,38 @@
             <a href="#">Terms and Conditions</a> · <a href="#">Privacy Policy</a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../scripts.js" type="text/javascript"></script>
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="ok-button">OK</button>
+                    <button type="button" class="cancel-button">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/modal.js"></script>
+    <script>
+        'use strict';
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const loader = document.querySelector('.loader');
+                loader.style.display = 'none';
+            }, 900);
+        });
+    </script>
+    <script src="scripts/swiper-bundle.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    
 </body>
 </html>
