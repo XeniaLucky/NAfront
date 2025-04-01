@@ -1,0 +1,176 @@
+@import url("blocks/block.css");
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #080305;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.hero button {
+    padding: 10px 30px;
+    background: #3D1EDD;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    display: block;
+    margin-top: 10px;
+    color: #6b46c1;
+}
+
+.first_img{
+    width: 100%;
+}
+.image-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: -70px; /*нужно доработать */
+
+    left: 10%;
+    right: 10%;
+    width: calc(100% - 20%);
+  }
+
+.testimonials img {
+    margin-bottom: 20px;
+}
+
+.testimonials p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.testimonials .author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonials .role {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.profile-section img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.feature h4 {
+    position: relative;
+    font-size: 34px;
+    margin-bottom: 16px;
+    padding-top: 48px;
+    color: #121212;
+    font-weight: bold;
+  }
+  
+  .features .feature:nth-child(1) h4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #3D1EDD;
+  }
+  
+  .features .feature:nth-child(n+2) h4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #F3F3F3;
+  }
+  
+  .feature p {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #707070;
+  }
+  
+
+.connect-content {
+    display: flex;
+    align-items: center; 
+}
+
+.connect-content img {
+    max-width: 60%; 
+    margin-right: 90px; 
+    margin-left: 70px;
+}
+
+.connect-text {
+    max-width: 40%;
+    text-align: left;
+}
+.connect h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.connect p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px; 
+}
+
+.cta-text {
+    z-index: 2; 
+    max-width: 40%;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+}
+
+.cta button {
+    background: #3D1EDD;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+.cta::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black; 
+    z-index: 1; 
+}
+
+.cta-image {
+    max-width: 60%; 
+    height: auto; 
+    margin-left: 20px; 
+    display: block;  
+    z-index: 2; 
+}
