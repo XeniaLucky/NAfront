@@ -1,0 +1,237 @@
+/* Базовые стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1920px;
+    width: 100%;
+    min-height: 90vh;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 83%;
+    background-image: url('../../img/Bitmap.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  /* Основной контент */
+  .profile-content {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Новая строка с контентом */
+  .content-row {
+    gap: 40px;
+    margin-top: 20px;
+    padding-right: 27%; 
+  }
+  
+  .main-content {
+    flex: 1;
+  }
+  
+  /* Стили для профиля */
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .profile-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .profile-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .skills {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    padding-bottom: 5px;
+  }
+  
+  .skill-button {
+    background-color: #eee;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
+  /* Разделительная линия */
+  .profile-separator {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+  }
+  
+  /* Стили для текстового контента */
+  .about-me {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+ .about-me h2, .portfolio h2, .work-experience h2 {
+    text-align: start;
+}
+  
+  .portfolio {
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .work-experience {
+    margin-bottom: 40px;
+  }
+
+.contact-info {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 19%;
+  top: 32%;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-left: 60px; /* Общий отступ слева */
+  position: relative;
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 10px; /* Отступ от левого края item */
+}
+
+.contact-text {
+  color: #888;
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0 0 5px 0;
+  padding-left: 10px; /* Дополнительный отступ для текста */
+}
+
+#contact-email,
+#contact-phone {
+  font-weight: normal;
+  font-size: 14px;
+  color: #333;
+  padding-left: 10px; /* Отступ для основного текста */
+}
+
+/* Кнопки остаются без изменений */
+.contact-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+  
+  .contact-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .download-resume {
+    background-color: #3D1EDD;
+    color: white;
+  }
+  
+  .message {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 900px) {
+    .content-row {
+      flex-direction: column;
+    }
+    
+    .contact-info {
+      width: 100%;
+      position: static;
+      margin-top: 30px;
+    }
+    
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .profile-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .skills {
+      margin-left: 0;
+      margin-top: 15px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
