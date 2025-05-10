@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fff;
+}
+.zaglovok{
+    font-weight: 800;
+}
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header button, header .login {
+    background: #3D1EDD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f5f5f5;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.hero button {
+    padding: 10px 30px;
+    background: #3D1EDD;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    display: block;
+    margin-top: 10px;
+    color: #6b46c1;
+    text-decoration: none;
+}
+.first_img{
+    width: 100%;
+}
+.testimonials {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.testimonials img {
+
+    margin-bottom: 20px;
+}
+
+.testimonials blockquote {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.testimonials p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.testimonials .author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonials .role {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.content-title {
+    text-align: center;
+    padding: 50px 10%;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+    background: #f9f9f9;
+}
+
+.profile-section img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.connect {
+    text-align: center;
+    padding: 50px 10%;
+}
+.connect-content {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+.connect-content img {
+    max-width: 60%; /* Ограничение ширины изображения */
+    margin-right: 90px; /* Отступ между изображением и текстом */
+    margin-left: 70px;
+}
+
+.connect-text {
+    max-width: 40%; /* Ограничение ширины текста */
+    text-align: left;
+}
+.connect h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.connect p {
+    font-size: 1.1rem;
+    color: #666;
+}
+.cta {
+    position: relative; /* Позволяет позиционировать дочерние элементы */
+    padding: 50px 10%;
+    background: #f5f5f5;
+    color: white; /* Цвет текста внутри */
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px; /* Обеспечьте достаточную высоту для отображения */
+}
+
+.cta-text {
+    z-index: 2; /* Убедитесь, что текст будет над фоном */
+    max-width: 40%;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+}
+
+.cta button {
+    background: #3D1EDD;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px; /* Отступ сверху для кнопки */
+}
+
+.cta::before {
+    content: ""; /* Создаем псевдоэлемент */
+    position: absolute; /* Позиционируем его относительно родителя */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black; /* Цвет фона */
+    z-index: 1; /* Убедитесь, что фон будет под текстом */
+}
+
+.cta-image {
+    max-width: 60%; /* Ограничение ширины изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+    margin-left: 20px; /* Отступ между текстом и изображением */
+    display: block; /* Убедитесь, что изображение отображается как блок */
+    z-index: 2; /* Убедитесь, что изображение выше фона */
+}
+
+
+footer {
+    background: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-top: 3px solid #ccc;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer .copyright {
+    font-size: 0.9rem;
+   margin-top: 70px;
+   text-align: right;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
