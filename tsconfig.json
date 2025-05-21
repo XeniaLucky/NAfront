@@ -1,0 +1,34 @@
+{
+
+  "compilerOptions": {
+
+    "target": "es2016",
+
+    "module": "esnext",
+
+    "moduleResolution": "node",
+
+    "esModuleInterop": true,
+
+    "forceConsistentCasingInFileNames": true,
+
+    "strict": true,
+
+    "skipLibCheck": true,
+
+    "lib": ["dom", "es2016"],
+
+    "outDir": "dist",
+
+    "baseUrl": ".",
+    "paths": {
+      "*": ["ts/*"]
+    }
+
+  },
+
+  "include": ["ts/**/*"],
+
+  "exclude": ["node_modules"]
+
+}

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles/blocks/card.css">
 </head>
 <body>
-      <!-- Блок прелоадера -->
     <div class="loader"> 
         <div class="loader-inner">
             <div class="loader-line-wrap">
@@ -31,7 +30,6 @@
             </div>
         </div>
     </div>
-    <!--Основной код -->
     <header>
         <div class="zaglovok">Jobly</div>
         <nav>
@@ -52,13 +50,11 @@
             <a class="hire_now"> Hire now</a>
         </span>
     </section>
-    <!--Слайдер--> 
     <section class="image-container">
         <img src="./img/rectangle_white&black.png" class="first_img" alt="Image 1">
         <img src="./img/Rectangle_2.png" class="overlay" alt="Image 2" style="display: none;">
         <img src="./img/0x0.png" class="overlay" alt="Image 3" style="display: none;">
     </section>
-    <!--Конец слайдера--> 
     <section class="testimonials">
         <img src="./img/Ellipse.png">
         <blockquote>
@@ -71,68 +67,14 @@
         <p class="role">Founder at Jobly.co</p>
     </section>
     <div class="content-title">
-        Everything you want to know in one place.
+      Everything you want to know in one place.
     </div>
-    <!--Карточки-->
     <div class="container">
         <div class="background-image"></div>
-        <div class="profile-content">
-          <div class="profile-header">
-            <div class="profile-main">
-              <img id="profile-image" src="" alt="Profile Picture">
-              <div class="profile-details">
-                <h1 id="profile-name"></h1>
-                <p id="profile-title"></p>
-                <p id="profile-location"></p>
-              </div>
-            </div>
-            <div class="skills">
-              <button class="skill-button">Figma</button>
-              <button class="skill-button">UI Design</button>
-              <button class="skill-button">UX Design</button>
-            </div>
-          </div>
-          <hr class="profile-separator"> 
-          <div class="content-row">
-              <div class="about-me">
-                <h2>About Me</h2>
-                <p id="about-me-text"></p>
-              </div>
-            <div class="contact-info">
-              <div class="contact-item">
-                <img src="./img/email.png" class="contact-icon" alt="Email Icon">
-                <p class = "contact-text">Email</p>
-                <span id="contact-email">pristia@gmail.com</span>
-              </div>
-              <div class="contact-item">
-                <img src="./img/phone.png" class="contact-icon" alt="Phone Icon">
-                <p class = "contact-text">Phone number</p>
-                <span id="contact-phone">0809021920139</span>
-              </div>
-              <button class="contact-button download-resume">Download Resume</button>
-              <button class="contact-button message">Message</button>
-          </div>
-          <div class="portfolio">
-            <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-              <div class="portfolio-item">
-                <img src="img/card_1.png" alt="Portfolio Item 1">
-              </div>
-              <div class="portfolio-item">
-                <img src="img/card_2.png" alt="Portfolio Item 2">
-              </div>
-              <div class="portfolio-item">
-                <img src="img/card_3.png" alt="Portfolio Item 3">
-              </div>
-            </div>
-          </div>
-          <div class="work-experience">
-            <h2>Work Experience</h2>
-          </div>
+        <div id="cards-container">
+
         </div>
-        </div>
-      </div>
-    <!--Карточки-конец-->
+    </div>
     <section class="features">
         <div class="feature">
           <h4>Professional Profile</h4>
@@ -216,7 +158,7 @@
             }, 900);
         });
     </script>
-       <script src="./scripts/scripts.card.js"></script>
+    <script src="dist/script.card.js"></script>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/modal.js"></script>

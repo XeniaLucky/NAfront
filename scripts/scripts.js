@@ -2,8 +2,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('.image-container .overlay');
     let currentIndex = 0;
-    const slideInterval = 3000; 
-    let intervalId; 
+    const slideInterval = 3000;
+    let intervalId;
     function showImage(index) {
         images.forEach((img, i) => {
             img.style.display = (i === index) ? 'block' : 'none';
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function startSlider() {
-        showImage(currentIndex); 
+        showImage(currentIndex);
         intervalId = setInterval(() => {
             currentIndex = (currentIndex + 1) % images.length;
             showImage(currentIndex);
@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function handleImageError() {
-      
         currentIndex = (currentIndex + 1) % images.length;
         showImage(currentIndex);
     }
@@ -28,5 +27,5 @@ document.addEventListener('DOMContentLoaded', function() {
         img.addEventListener('error', handleImageError);
     });
 
-    startSlider(); 
+    startSlider();
 });
